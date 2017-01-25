@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <!-- Custom styles for this template -->
-    <link href="css/blog.css" rel="stylesheet">
+    <link href="<?php bloginfo('template_directory');?>/css/blog.css" rel="stylesheet">
 
     <!-- Font Awesome CDN -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -25,13 +25,13 @@
     <header class="site-header" itemscope="" itemtype="http://schema.org/WPHeader">
       <div class="wrap">
         <div class="site-avatar">
-          <a href="./index.html">
-            <img alt="" src="images/profile.jpg" srcset="images/profile.jpg" class="avatar avatar-224 photo" height="224" width="224">
+          <a href="<?php bloginfo('template_directory');?>/index.html">
+            <img alt="" src="<?php bloginfo('template_directory');?>/images/profile.jpg" srcset="images/profile.jpg" class="avatar avatar-224 photo" height="224" width="224">
           </a>
         </div>
         <div class="title-area">
           <p class="site-title" itemprop="headline">
-            <a href="./index.html">Amsal Karic</a>
+            <a href="<?php bloginfo('template_directory');?>/index.html">Amsal Karic</a>
           </p>
           <p class="site-description" itemprop="description">Utopian Monolith Blog</p>
         </div>
@@ -42,8 +42,8 @@
                 <div id="responsive-menu-icon"><i class="fa fa-bars" aria-hidden="true"></i></div>
                 <ul id="menu-top" class="menu nav-menu responsive-menu">
                   <li id="menu-item-119" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-119">
-                    <a href="./aboutme.html" itemprop="url"><span itemprop="name">About Me</span></a>
-                    <a href="./blog.html" itemprop="url"><span itemprop="name">Blog</span></a>
+                    <a href="<?php bloginfo('template_directory');?>/aboutme.html" itemprop="url"><span itemprop="name">About Me</span></a>
+                    <a href="<?php bloginfo('template_directory');?>/blog.html" itemprop="url"><span itemprop="name">Blog</span></a>
                     <!--<ul class="sub-menu">
                       <li id="menu-item-3306" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3306">
                         <a href="#" itemprop="url">
@@ -238,6 +238,6 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="./js/primary.js"></script>
+    <script src="<?php bloginfo('template_directory');?>/js/primary.js"></script>
   </body>
 </html>

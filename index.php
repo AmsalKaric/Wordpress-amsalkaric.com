@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <!-- Custom styles for this template -->
-    <link href="css/blog.css" rel="stylesheet">
+    <link href="<?php bloginfo('template_directory');?>/css/blog.css" rel="stylesheet">
 
     <!-- Font Awesome CDN -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -26,12 +26,12 @@
       <div class="wrap">
         <div class="site-avatar">
           <a href="https://www.amsalkaric.com/">
-            <img alt="" src="images/profile.jpg" srcset="images/profile.jpg" class="avatar avatar-224 photo" height="224" width="224">
+            <img alt="" src="<?php bloginfo('template_directory');?>/images/profile.jpg" srcset="<?php bloginfo('template_directory');?>/images/profile.jpg" class="avatar avatar-224 photo" height="224" width="224">
           </a>
         </div>
         <div class="title-area">
           <p class="site-title" itemprop="headline">
-            <a href="./index.html">Amsal Karic</a>
+            <a href="<?php bloginfo('template_directory');?>/index.html">Amsal Karic</a>
           </p>
           <p class="site-description" itemprop="description">Utopian Monolith Blog</p>
         </div>
@@ -42,8 +42,8 @@
                 <div id="responsive-menu-icon"></div>
                 <ul id="menu-top" class="menu nav-menu responsive-menu">
                   <li id="menu-item-119" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-119">
-                    <a href="./aboutme.html" itemprop="url"><span itemprop="name">About Me</span></a>
-                    <a href="./blog.html" itemprop="url"><span itemprop="name">Blog</span></a>
+                    <a href="<?php bloginfo('template_directory');?>/aboutme.html" itemprop="url"><span itemprop="name">About Me</span></a>
+                    <a href="/index.php/blog.php" itemprop="url"><span itemprop="name">Blog</span></a>
                     <!--<ul class="sub-menu">
                       <li id="menu-item-3306" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3306">
                         <a href="#" itemprop="url">
@@ -115,24 +115,26 @@
         <div class="col-sm-12 blog-main" style="padding:40px;">
           <div class="blog-post">
             <h2 class="blog-post-title" style="font-size:35px;">Salutation, World!</h2>
-            <img style="margin:30px 15px 10px 0px; float:left; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" alt="Brand" width="170px" height="170px" src="images/profile.jpg">
+            <img style="margin:30px 15px 10px 0px; float:left; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" alt="Brand" width="170px" height="170px" src="<?php bloginfo('template_directory');?>/images/profile.jpg">
             <p style="margin-top:30px;">I work as a software development manager at grocery ecommerce company <a href="#">MyWebGrocer</a>. Amsal Karic is Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet sollicitudin eros. Aliquam non lorem mauris. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum aliquam pretium sapien condimentum interdum. Quisque efficitur ut mi non ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at nunc tortor. Sed in odio ultricies, condimentum dolor ut, fringilla velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at nunc tortor. Sed in odio ultricies, condimentum dolor ut, fringilla velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at nunc tortor. Sed in odio ultricies, condimentum dolor ut, fringilla velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at nunc tortor. Sed in odio ultricies, condimentum dolor ut, fringilla velit._</p>
           </div><!-- /.blog-post -->
         <div id="icon_set" class="center_block" style="display:flex; justify-content:center;">
-            <a href="#"><img src="images/icons/gplus.png" style="" width="40px" height="40px"></a>
-            <a href="#"><img src="images/icons/linkedin.png" style="margin-left:15px;" width="40px" height="40px"></a>
-            <a href="#"><img src="images/icons/mail.png" style="margin-left:15px;" width="40px" height="40px"></a>
-            <a href="#"><img src="images/icons/twitter.png" style="margin-left:15px;" width="40px" height="40px"></a>
-            <a href="#"><img src="images/icons/instagram.png" style="margin-left:15px;" width="40px" height="40px"></a>
-            <a href="#"><img src="images/icons/rss.png" style="margin-left:15px;" width="40px" height="40px"></a>
+            <a href="#"><img src="<?php bloginfo('template_directory');?>/images/icons/gplus.png" style="" width="40px" height="40px"></a>
+            <a href="#"><img src="<?php bloginfo('template_directory');?>/images/icons/linkedin.png" style="margin-left:15px;" width="40px" height="40px"></a>
+            <a href="#"><img src="<?php bloginfo('template_directory');?>/images/icons/mail.png" style="margin-left:15px;" width="40px" height="40px"></a>
+            <a href="#"><img src="<?php bloginfo('template_directory');?>/images/icons/twitter.png" style="margin-left:15px;" width="40px" height="40px"></a>
+            <a href="#"><img src="<?php bloginfo('template_directory');?>/images/icons/instagram.png" style="margin-left:15px;" width="40px" height="40px"></a>
+            <a href="#"><img src="<?php bloginfo('template_directory');?>/images/icons/rss.png" style="margin-left:15px;" width="40px" height="40px"></a>
         </div>
         <div id="icon_set" class="center_block" style="display:flex; justify-content:center; margin-top:10px;">
-            <a href="#"><img src="images/icons/moar.png" style="" width="40px" height="40px"></a>
+            <a href="#"><img src="<?php bloginfo('template_directory');?>/images/icons/moar.png" style="" width="40px" height="40px"></a>
         </div>
-        <a href="/data/resume_amsal_karic.pdf" style="font-size:30px; margin-top:20px; text-decoration:underline; clear:left;" class="text-center center-block">Resume</a>
+        <a href="<?php bloginfo('template_directory');?>/data/resume_amsal_karic.pdf" style="font-size:30px; margin-top:20px; text-decoration:underline; clear:left;" class="text-center center-block">Resume</a>
         </div><!-- /.blog-main -->
       </div><!-- /.row -->
     </div><!-- /.container -->
+
+    <div class="clearfix"></div>
 
     <footer class="blog-footer">
       <p>"Look deep into nature, and then you will understand everything better."</p>
@@ -145,6 +147,6 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="./js/primary.js"></script>
+    <script src="<?php bloginfo('template_directory');?>/js/primary.js"></script>
   </body>
 </html>
