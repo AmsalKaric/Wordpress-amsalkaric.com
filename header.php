@@ -7,17 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
-    
-    <title>Blog Template for Bootstrap</title>
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-    <!-- Custom styles for this template -->
-    <link href="<?php bloginfo('template_directory');?>/css/blog.css" rel="stylesheet">
-
-    <!-- Font Awesome CDN -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <?php wp_head();?>
   </head>
 
