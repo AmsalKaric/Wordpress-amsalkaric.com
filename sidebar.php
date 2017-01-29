@@ -1,20 +1,30 @@
 <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
           <div class="sidebar-module sidebar-module-inset">
-            <h4>About</h4>
-            <p><?php the_author_meta( 'description' ); ?></p>
+            <h4><b>Recent Comments</b></h4>
+              <?php $args = array(
+                  'number' => 5,
+
+              );
+               
+              $comments = get_comments($args);
+              if (!empty($comments)) {
+                foreach ($comments as $comment) {
+                    // Output comments etc here
+                  $al = get_comment_author_url();
+                  $fp = $comment->comment_author;
+                  if ($al) {
+                    $fp = '<a href="'.$al.'">'.$comment->comment_author.'</a>';
+                  }
+                  echo '<p>'.$fp.' on <a href="'.get_comment_link( $comment ).'">'.get_the_title($comment->comment_post_ID).'</a></p>';
+                }
+              } else {
+                echo '<p>No comments found</p>';
+              }?>
           </div>
           <div class="sidebar-module">
-            <h4>Archives</h4>
+            <h4><b>Archives</b></h4>
             <ol class="list-unstyled">
-              <?php wp_get_archives( 'type=monthly' ); ?>
-            </ol>
-          </div>
-          <div class="sidebar-module">
-            <h4>Elsewhere</h4>
-            <ol class="list-unstyled">
-              <li><a href="<?php echo get_option('github'); ?>">GitHub</a></li>
-              <li><a href="<?php echo get_option('twitter'); ?>">Twitter</a></li>
-              <li><a href="<?php echo get_option('facebook'); ?>">Facebook</a></li>
+              <?php wp_get_archives('type=monthly'); ?>
             </ol>
           </div>
         </div><!-- /.blog-sidebar -->

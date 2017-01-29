@@ -12,12 +12,13 @@
   </head>
 
   <body>
+    <?php if ( function_exists('gtm4wp_the_gtm_tag') ) { gtm4wp_the_gtm_tag(); } ?>
 
     <header class="site-header" itemscope="" itemtype="http://schema.org/WPHeader">
       <div class="wrap">
         <div class="site-avatar">
           <a href="<?php bloginfo('wpurl');?>">
-            <img alt="" src="<?php bloginfo('template_directory');?>/images/profile.jpg" srcset="<?php bloginfo('template_directory');?>/images/profile.jpg" class="avatar avatar-224 photo" height="224" width="224">
+            <img alt="" src="<?php echo get_avatar_data('amsalk@gmail.com')['url'];?>" srcset="<?php echo get_avatar_data('amsalk@gmail.com')['url'];?>" class="avatar avatar-224 photo" height="224" width="224">
           </a>
         </div>
         <div class="title-area">
@@ -61,28 +62,28 @@
             <div class="widget-wrap">
               <h4 class="widget-title widgettitle">Contact info</h4>
               <ul class="aligncenter">
-                <li class="ssi-gplus">
-                  <a href="http://plus.google.com/+AmsalKaric" target="_blank">
+                <li>
+                  <a href="<?php echo get_option('google_plus'); ?>" target="_blank">
                     <i class="fa fa-google-plus fa-6" aria-hidden="true"></i>
                   </a>
                 </li>
-                <li class="ssi-linkedin">
-                  <a href="http://fi.linkedin.com/in/simoahava" target="_blank">
+                <li>
+                  <a href="<?php echo get_option('linked_in'); ?>" target="_blank">
                     <i class="fa fa-linkedin fa-6" aria-hidden="true"></i>
                   </a>
                 </li>
-                <li class="ssi-rss">
-                  <a href="https://www.simoahava.com/feed/" target="_blank">
-                    <i class="fa fa-envelope-o fa-6" aria-hidden="true"></i>
+                <li>
+                  <a href="<?php echo get_option('github'); ?>" target="_blank">
+                    <i class="fa fa-github fa-6" aria-hidden="true"></i>
                   </a>
                 </li>
-                <li class="ssi-twitter">
-                  <a href="http://www.twitter.com/SimoAhava" target="_blank">
+                <li>
+                  <a href="<?php echo get_option('twitter'); ?>" target="_blank">
                     <i class="fa fa-twitter fa-6" aria-hidden="true"></i>
                   </a>
                 </li>
-                <li class="ssi-twitter">
-                  <a href="http://www.twitter.com/SimoAhava" target="_blank">
+                <li>
+                  <a href="<?php echo get_option('instagram'); ?>" target="_blank">
                     <i class="fa fa-instagram fa-6" aria-hidden="true"></i>
                   </a>
                 </li>
