@@ -25,6 +25,18 @@ h6, .h6 {
   color: #333;
 }
 
+img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-transition: box-shadow .5s;
+  transition: box-shadow .5s;
+}
+
+img:hover {
+  box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2), 0 15px 50px 0 rgba(0, 0, 0, 0.19);
+  -webkit-transition: box-shadow .5s;
+  transition: box-shadow .5s;
+}
+
 
 /*
  * Blog name and description
@@ -77,26 +89,18 @@ h6, .h6 {
 
 
 /*
- * Pagination 
+ * Breadcrumb
  */
-
-.pager {
-  margin-bottom: 60px;
-  text-align: left;
+.breadcrumbs {
+  margin-bottom: 20px;
 }
-.pager > li > a {
-  width: 140px;
-  padding: 10px 20px;
-  text-align: center;
-  border-radius: 30px;
-}
-
 
 /*
  * Blog posts
  */
 
-.blog-post {
+.blog-post
+ {
   margin-bottom: 60px;
 }
 .blog-post-title {
@@ -106,6 +110,63 @@ h6, .h6 {
 .blog-post-meta {
   margin-bottom: 20px;
   color: #999;
+}
+
+.row-single {
+  margin-top: 30px;
+}
+.post-image {
+  margin-bottom: 20px;
+}
+
+
+/*
+ * Filing section
+ */
+
+.file-footer {
+  margin-top: 20px;
+}
+.file-categories,
+.file-tags {
+  display: block;
+}
+
+
+/* 
+ * Pagination
+ */
+
+.pager {
+  margin-bottom: 60px;
+  text-align: left;
+}
+
+.archive-pagination,
+.entry-pagination {
+  clear: both;
+}
+
+.archive-pagination li {
+  display: inline;
+}
+
+.pager a, 
+.pager span {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.pager a:hover,
+.pager span.current {
+  background-color: rgb(74,112,222);
 }
 
 

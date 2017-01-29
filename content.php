@@ -9,11 +9,11 @@
 			</a> &bull;
 			<a href="<?php comments_link(); ?>">
 				<?php
-		printf( _nx( 'One Comment', '%1$s Comments', get_comments_number(), 'comments title', 'textdomain' ), number_format_i18n( 						get_comments_number() ) ); ?>
+		printf( _nx('One Comment', '%1$s Comments', get_comments_number(), 'comments title', 'textdomain'), number_format_i18n( 						get_comments_number())); ?>
 			</a>
 	</p>
 
-  <?php if ( has_post_thumbnail() ) {?>
+  <?php if (has_post_thumbnail()) {?>
 	<div class="row">
 		<div class="col-md-4">
 			<?php	the_post_thumbnail('thumbnail'); ?>
@@ -25,6 +25,13 @@
 	<?php } else { ?>
 	<?php the_excerpt(); ?>
 	<?php } ?>
+
+	<footer class="file-footer">
+		<p class="file-meta">
+			<span class="file-categories">Filed Under: <?php the_category(', ') ?></span>
+			<span class="file-tags"><?php the_tags('Tagged With: ',', '); ?></span>
+		</p>
+	</footer>
 
   <hr>
 
