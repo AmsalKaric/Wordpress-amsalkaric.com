@@ -179,10 +179,16 @@ textarea {
   background-color: #fff;
   border: 1px solid #ddd;
   color: #666;
-  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   padding: 16px;
   width: 100%;
+}
+
+#search {
+  height: 20px;
+}
+.searchform div {
+  margin-top: -20px;
 }
 
 input:focus,
