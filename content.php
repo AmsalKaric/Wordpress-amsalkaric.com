@@ -18,7 +18,7 @@
 		<div class="col-md-4">
 			<?php	the_post_thumbnail('thumbnail'); ?>
 		</div>
-		<div class="col-md-6">
+		<div class="col-md-6 excerpt">
 			<?php the_excerpt(); ?>
 		</div>
 	</div>

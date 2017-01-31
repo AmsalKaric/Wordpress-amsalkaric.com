@@ -1,4 +1,7 @@
 <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+  <div class="sidebar-module">
+    <a class="twitter-timeline" href="https://twitter.com/AmsalKaric">Tweets by AmsalKaric</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
   <div class="sidebar-module sidebar-module-inset">
     <h4><b>Search Content</b></h4>
     <?php get_search_form(); ?>

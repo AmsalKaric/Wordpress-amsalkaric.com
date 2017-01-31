@@ -15,7 +15,7 @@
     <?php if (function_exists('gtm4wp_the_gtm_tag')) { gtm4wp_the_gtm_tag(); } ?>
 
     <header class="site-header" itemscope="" itemtype="http://schema.org/WPHeader">
-      <img id="avatar-bg" src="http://cchunterbooks.com/blog/wp-content/uploads/2016/06/Beach.jpg">
+      <img id="avatar-bg" src="<?php bloginfo('template_directory');?>/images/bg2.jpg">
       <div class="wrap">
         <div class="site-avatar">
           <a href="<?php bloginfo('wpurl');?>">
@@ -26,7 +26,7 @@
           <p class="site-title" itemprop="headline">
             <a href="<?php bloginfo('wpurl');?>">Amsal Karic</a>
           </p>
-          <p class="site-description" itemprop="description">Utopian Monolith Blog</p>
+          <p class="site-description" itemprop="description">Fortes Fortuna Adiuvat</p>
         </div>
         <div class="widget-area header-widget-area">
           <section id="nav_menu-2" class="widget widget_nav_menu">
@@ -61,7 +61,7 @@
           </section>
           <section id="simple-social-icons-2" class="widget simple-social-icons">
             <div class="widget-wrap">
-              <h4 class="widget-title widgettitle">Contact info</h4>
+              <h4 class="widget-title widgettitle">Contact</h4>
               <ul class="aligncenter">
                 <li>
                   <a href="<?php echo get_option('google_plus'); ?>" target="_blank">
@@ -93,7 +93,7 @@
           </section>
           <section id="text-2" class="widget widget_text">
             <div class="widget-wrap">
-              <div class="textwidget">amsal (at) amsalkaric.com</div>
+              <div class="textwidget" style="unicode-bidi:bidi-override; direction: rtl;">moc.ciraklasma<span style="display:none">foo</span>@lasma</div>
             </div>
           </section>
         </div>
