@@ -183,11 +183,15 @@ img:hover {
   padding: 8px 12px;
   text-decoration: none;
   border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+  transition: box-shadow .3s, background-color .3s;
 }
 
 .pager a:hover,
 .pager span.current {
   background-color: rgb(74,112,222);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .6);
+  transition: box-shadow .3s, background-color .3s;
 }
 
 
@@ -203,6 +207,7 @@ textarea {
   font-weight: 300;
   padding: 16px;
   width: 100%;
+  transition: border-color .3s;
 }
 
 #search {
@@ -215,6 +220,8 @@ textarea {
 input:focus,
 textarea:focus {
   outline: none;
+  border-color: rgb(74,112,222);
+  transition: border-color .3s;
 }
 
 .content input:focus,
@@ -244,6 +251,9 @@ input[type="submit"] {
   padding: 16px 24px;
   text-transform: uppercase;
   width: auto;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+  border-radius: 10px;
+  transition: box-shadow .3s, background-color .3s;
 }
 
 button:hover,
@@ -251,6 +261,8 @@ input:hover[type="button"],
 input:hover[type="reset"],
 input:hover[type="submit"] {
   background-color: rgb(74,112,222);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .6);
+  transition: box-shadow .3s, background-color .3s;
 }
 
 input[type="search"]::-webkit-search-cancel-button,
@@ -555,12 +567,14 @@ li.comment {
   padding: 12px;
   text-align: center;
   text-transform: uppercase;
+  transition: background-color .3s;
 }
 
 .nav-menu a:hover,
 .nav-menu .current-menu-item > a {
   background-color: #fff;
   color: #000;
+  transition: background-color .3s;
 }
 
 .nav-menu .sub-menu {
