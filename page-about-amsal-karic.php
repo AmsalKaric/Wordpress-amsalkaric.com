@@ -8,7 +8,8 @@
         <p>I believe that technology is incredibly beautiful and powerful.</p>
         <p>More importantly, I believe that it's humanity's only true salvation.</p>
       </div><!-- /.blog-post -->
-    <a href="<?php bloginfo('template_directory');?>/data/resume_amsal_karic.pdf" style="font-size:30px;" class="text-center center-block">Resume</a>
+      
+    <button id="resumeBtn" class="text-center center-block"><a href="<?php bloginfo('template_directory');?>/data/resume_amsal_karic.pdf" style="color:white;">Resume</a></button>
     </div><!-- /.blog-main -->
   </div><!-- /.row -->
 

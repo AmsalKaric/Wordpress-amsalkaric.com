@@ -15,7 +15,7 @@
     <?php if (function_exists('gtm4wp_the_gtm_tag')) { gtm4wp_the_gtm_tag(); } ?>
 
     <header class="site-header" itemscope="" itemtype="http://schema.org/WPHeader">
-      <img id="avatar-bg" src="<?php bloginfo('template_directory');?>/images/bg2.jpg">
+      <img id="avatar-bg" src="<?php bloginfo('template_directory');?>/images/bg.jpg">
       <div class="wrap">
         <div class="site-avatar">
           <a href="<?php bloginfo('wpurl');?>">
