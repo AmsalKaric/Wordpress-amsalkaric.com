@@ -19,7 +19,7 @@
       <div class="wrap">
         <div class="site-avatar">
           <a href="<?php bloginfo('wpurl');?>">
-            <img alt="" src="<?php echo get_avatar_data('amsalk@gmail.com')['url'];?>" srcset="<?php echo get_avatar_data('amsalk@gmail.com')['url'];?>" class="avatar avatar-224 photo" height="224" width="224">
+            <img alt="" src="<?php bloginfo('template_directory');?>/images/profile3.jpg" srcset="<?php bloginfo('template_directory');?>/images/profile3.jpg" class="avatar avatar-224 photo" height="224" width="224">
           </a>
         </div>
         <div class="title-area">
