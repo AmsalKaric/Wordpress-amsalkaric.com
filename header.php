@@ -26,7 +26,7 @@
           <p class="site-title" itemprop="headline">
             <a href="<?php bloginfo('wpurl');?>">Amsal Karic</a>
           </p>
-          <p class="site-description" itemprop="description">Fortes Fortuna Adiuvat</p>
+          <p class="site-description" itemprop="description">Fortis Fortuna Adiuvat</p>
         </div>
         <div class="widget-area header-widget-area">
           <section id="nav_menu-2" class="widget widget_nav_menu">
